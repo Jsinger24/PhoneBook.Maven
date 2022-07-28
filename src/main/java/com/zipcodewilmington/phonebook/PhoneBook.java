@@ -53,10 +53,10 @@ public class PhoneBook {
     }
 
     public List<String> getAllContactNames() {
-        return (List<String>) getMap();
+        return phonebook.get(name);
     }
 
     public Map<String, List<String>> getMap() {
-        return null;
+        return phonebook;
     }
 }
