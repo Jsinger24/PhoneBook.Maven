@@ -1,7 +1,7 @@
 package com.zipcodewilmington.phonebook;
 
 import java.util.*;
-//import java.util.HashMap;
+import java.util.HashMap;
 
 
 /**
@@ -34,7 +34,7 @@ public class PhoneBook {
         phonebook.remove(name);
     }
 
-    public Boolean hasEntry(String name) {
+    public Boolean hasEntry(String name, String phoneNumber) {
         if(phonebook.containsKey(name)){
             return true;
         }else {
@@ -50,6 +50,7 @@ public class PhoneBook {
         if(phonebook.containsKey(phoneNumber)){
             return name;
         }
+        return phoneNumber;
     }
 
     public List<String> getAllContactNames() {
